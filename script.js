@@ -26,10 +26,9 @@ async function checkWeather(city) {
     return;
   }
 
-
   location_not_found.style.display = "none";
   weather_body.style.display = "flex";
-  
+
   temperature.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
 
   description.innerHTML = `${weather_data.weather[0].description}`;
@@ -40,19 +39,19 @@ async function checkWeather(city) {
 
   switch (weather_data.weather[0].main) {
     case "Clouds":
-      weather_img.src = "/assets/cloud.png";
+      weather_img.src = "./assets/cloud.png";
       break;
     case "Clear":
-      weather_img.src = "/assets/clear.png";
+      weather_img.src = "./assets/clear.png";
       break;
     case "Rain":
-      weather_img.src = "/assets/rain.png";
+      weather_img.src = "./assets/rain.png";
       break;
     case "Mist":
-      weather_img.src = "/assets/cloud.png";
+      weather_img.src = "./assets/mist.png";
       break;
     case "Snow":
-      weather_img.src = "/assets/snow.png";
+      weather_img.src = "./assets/snow.png";
       break;
   }
 }

@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(110, 193, 182);
+  background-color: #78ccf0;
 }
 
 .container {
@@ -137,11 +137,10 @@ body {
   flex-direction: column;
 }
 
-.location-not-found  h1{
-    font-size: 20px;
-    color: #6b6b6b;
-    margin-block-end: 15px;
-
+.location-not-found h1 {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
 }
 
 .location-not-found img {
